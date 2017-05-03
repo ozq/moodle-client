@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "guzzle/guzzle": "3.9.x",
-        "beberlei/assert": "dev-master"
+        "beberlei/assert": "2.7.x"
     },
     "require-dev": {
         "phpunit/phpunit": "5.x"
