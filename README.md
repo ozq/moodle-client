@@ -4,7 +4,7 @@
 The recommended way to install the library is through Composer:
 
 ```
-$ composer require ozq/moodle-client:@dev
+$ composer require ozq/moodle-client:dev-master
 ```
  
 ## Usage
