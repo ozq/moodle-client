@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "guzzle/guzzle": "3.9.x",
+        "guzzlehttp/guzzle": "5.x",
         "beberlei/assert": "2.7.x"
     },
     "require-dev": {

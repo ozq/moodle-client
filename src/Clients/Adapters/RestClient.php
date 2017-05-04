@@ -5,7 +5,7 @@ namespace Ozq\MoodleClient\Clients\Adapters;
 use Ozq\MoodleClient\Clients\BaseAdapter;
 use Ozq\MoodleClient\Connection;
 use Assert\Assertion;
-use \Guzzle\Http\Client as HttpClient;
+use GuzzleHttp\Client as HttpClient;
 
 /**
  * Class RestClient
@@ -49,8 +49,7 @@ class RestClient extends BaseAdapter
             self::OPTION_TOKEN    => $this->getConnection()->getToken(),
         ];
 
-        $request = $this->getClient()->post()->addPostFields($configuration)->addPostFields($arguments);
-        $response = $request->send();
+        $response = $this->getClient()->post(null, ['body' => array_merge($configuration, $arguments)]);
         $this->handleException($response);
 
         $formattedResponse = $this->responseFormat === self::RESPONSE_FORMAT_JSON ?
@@ -66,7 +65,7 @@ class RestClient extends BaseAdapter
      */
     protected function buildClient()
     {
-        return new HttpClient($this->getEndPoint());
+        return new HttpClient(['base_url' => $this->getEndPoint()]);
     }
 
     /**
