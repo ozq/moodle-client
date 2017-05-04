@@ -52,6 +52,15 @@ abstract class BaseAdapter implements ClientAdapterInterface
     }
 
     /**
+     * Get connection
+     * @return Connection
+     */
+    protected function getConnection()
+    {
+        return $this->connection;
+    }
+
+    /**
      * Get endpoint
      * @param array $options
      * @return string
@@ -61,15 +70,6 @@ abstract class BaseAdapter implements ClientAdapterInterface
         $url = $this->connection->getUrl() . '/' . $this->getScriptPath();
 
         return $options ? $url . '?' . http_build_query($options) : $url;
-    }
-
-    /**
-     * Get connection
-     * @return Connection
-     */
-    protected function getConnection()
-    {
-        return $this->connection;
     }
 
     /**
@@ -91,6 +91,16 @@ abstract class BaseAdapter implements ClientAdapterInterface
     }
 
     /**
+     * Recognize client type by client class name
+     * @return string
+     */
+    protected function recognizeClientType()
+    {
+        $reflectionClass = new ReflectionClass(static::class);
+        return str_replace('client', '', strtolower($reflectionClass->getShortName()));
+    }
+
+    /**
      * Check if response contains exceptions
      * @param mixed $response
      * @throws ApiException
@@ -102,15 +112,5 @@ abstract class BaseAdapter implements ClientAdapterInterface
         if (array_key_exists('exception', $response)) {
             throw new ApiException($response['errorcode'] . ': ' . $response['message']);
         }
-    }
-
-    /**
-     * Recognize client type by client class name
-     * @return string
-     */
-    protected function recognizeClientType()
-    {
-        $reflectionClass = new ReflectionClass(static::class);
-        return str_replace('client', '', strtolower($reflectionClass->getShortName()));
     }
 }

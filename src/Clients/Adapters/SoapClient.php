@@ -41,6 +41,6 @@ class SoapClient extends BaseAdapter
             self::OPTION_TOKEN => $this->getConnection()->getToken(),
         ]);
 
-        return $this->client = new BaseSoapClient($endPoint);
+        return new BaseSoapClient($endPoint);
     }
 }
