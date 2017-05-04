@@ -8,7 +8,7 @@ $ composer require ozq/moodle-client:dev-master
 ```
  
 ## Usage
-Create instacne of connection with your moodle service: 
+Create instance of connection with your moodle service: 
 ```php
 $connection = new Connection('http://url-to-moodle-service.com', 'Y0uR!tOken');
 ```
@@ -45,7 +45,7 @@ $courseDto->fullName = 'Test Course fullname';
 $courseService->create($courseDto);
 ```
 
-If there is no build in needed services and entitites, you can create it.  
+If there is no build in needed services and entities, you can create it.  
 Services must extend Service abstract class, entities (as DTO's) must extend Entity abstract class.  
 
 Also, you can use moodle client without service layer:
