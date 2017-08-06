@@ -14,7 +14,7 @@ class User extends Entity
      * Desired username for created account
      * @var string
      */
-    public $username;
+    public $userName;
 
     /**
      * Desired password for created password
@@ -26,13 +26,13 @@ class User extends Entity
      * User's first name
      * @var string
      */
-    public $firstname;
+    public $firstName;
 
     /**
      * User's last name
      * @var string
      */
-    public $lastname;
+    public $lastName;
 
     /**
      * User's email address
@@ -50,7 +50,7 @@ class User extends Entity
      * An arbitrary ID code number perhaps from the institution
      * @var string
      */
-    public $idnumber;
+    public $idNumber;
 
     /**
      * Language code such as "en", must exist on server
@@ -61,7 +61,7 @@ class User extends Entity
     /**
      * @var string
      */
-    public $calendartype;
+    public $calendarType;
 
     /**
      * Theme name such as "standard", must exist on server
@@ -73,13 +73,13 @@ class User extends Entity
      * Timezone code such as Australia/Perth, or 99 for default
      * @var string
      */
-    public $timezone;
+    public $timeZone;
 
     /**
      * Mail format code is 0 for plain text, 1 for HTML etc
      * @var int
      */
-    public $mailformat;
+    public $mailFormat;
 
     /**
      * User profile description, no HTML
@@ -102,22 +102,22 @@ class User extends Entity
     /**
      * @var string
      */
-    public $firstnamephonetic;
+    public $firstNamePhonetic;
 
     /**
      * @var string
      */
-    public $lastnamephonetic;
+    public $lastNamePhonetic;
 
     /**
      * @var string
      */
-    public $middlename;
+    public $middleName;
 
     /**
      * @var string
      */
-    public $alternatename;
+    public $alternateName;
 
     /**
      * User preferences
@@ -126,8 +126,8 @@ class User extends Entity
     public $preferences = [];
 
     /**
-     * User custom fields (also known as user profil fields)
+     * User custom fields (also known as user profile fields)
      * @var array
      */
-    public $customfields = [];
+    public $customFields = [];
 }

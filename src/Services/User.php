@@ -54,7 +54,7 @@ class User extends Service
 
     /**
      * Create new user
-     * @param \Ozq\MoodleClient\Entities\Dto\User[] ...$users
+     * @param \Ozq\MoodleClient\Entities\Dto\User[] ...$usersDto
      * @return UserCollection
      */
     public function create(UserDto ...$usersDto)
@@ -68,7 +68,7 @@ class User extends Service
         );
 
         $users = array_map(function ($response, $user) {
-            return array_merge($response, $user);
+            return array_unique(array_merge($response, $user));
         }, $response, $users);
 
         return $this->getUserCollection($users);
