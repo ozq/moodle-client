@@ -75,6 +75,18 @@ class User extends Service
     }
 
     /**
+     * Delete users by ids
+     * @param array $ids
+     * @return mixed
+     */
+    public function delete(array $ids = [])
+    {
+        $response = $this->sendRequest('core_user_delete_users', ['userids' => $ids]);
+
+        return $response;
+    }
+
+    /**
      * Get user collection by user array
      * @param array $users
      * @return UserCollection

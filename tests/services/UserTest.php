@@ -91,6 +91,31 @@ class UserTest extends MoodleTestCase
     }
 
     /**
+     * @param CourseCollection
+     * @depends testCreate
+     */
+    public function testDelete($users)
+    {
+        $ids = [];
+        /** @var UserCollection $users */
+        foreach ($users as $user) {
+            $ids[] = $user->id;
+        }
+
+        $this->service->delete($ids);
+
+        $allUsersDeleted = true;
+        foreach ($ids as $id) {
+            $users = $this->service->getByField('id', $id);
+            if (!empty($users->toArray())) {
+                $allUsersDeleted = false;
+            }
+        }
+
+        $this->assertEquals(true, $allUsersDeleted);
+    }
+
+    /**
      * @return UserDto
      */
     protected function buildUser()
