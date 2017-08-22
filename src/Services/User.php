@@ -63,7 +63,7 @@ class User extends Service
         $response = $this->sendRequest(
             'core_user_create_users',
             [
-                'users' =>$users
+                'users' => $users
             ]
         );
 
