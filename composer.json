@@ -1,5 +1,5 @@
 {
-    "name": "ozq/moodle-client",
+    "name": "fabianospina/moodle-client",
     "description": "Moodle client",
     "license": "MIT",
     "version": "1.0.0",
@@ -8,6 +8,11 @@
             "name": "Sergey Volkov",
             "email": "svolkov25@gmail.com",
             "homepage": "http://volkov.space"
+        },
+        {
+            "name": "Fabian Ospina",
+            "email": "fabian.ospina@gmail.com",
+            "homepage": "http://fabianospina.com"
         }
     ],
     "minimum-stability": "dev",
