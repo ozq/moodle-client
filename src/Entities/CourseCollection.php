@@ -1,12 +1,12 @@
 <?php
 
-namespace Ozq\MoodleClient\Entities;
+namespace F0\LaravelMoodleClient\Entities;
 
-use Ozq\MoodleClient\GenericCollection;
+use F0\LaravelMoodleClient\GenericCollection;
 
 /**
  * Class CourseCollection
- * @package Ozq\MoodleClient\Entities
+ * @package F0\LaravelMoodleClient\Entities
  */
 class CourseCollection extends GenericCollection
 {

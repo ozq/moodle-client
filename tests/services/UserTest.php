@@ -1,18 +1,18 @@
 <?php
 
-namespace Ozq\MoodleClient\Tests\Services;
+namespace F0\LaravelMoodleClient\Tests\Services;
 
-use Ozq\MoodleClient\Clients\Adapters\RestClient;
-use Ozq\MoodleClient\Clients\ClientAdapterInterface;
-use Ozq\MoodleClient\Services\User;
-use Ozq\MoodleClient\Tests\MoodleTestCase;
-use Ozq\MoodleClient\Entities\UserCollection;
-use Ozq\MoodleClient\Entities\Dto\User as UserDto;
-use Ozq\MoodleClient\Entities\User as UserEntity;
+use F0\LaravelMoodleClient\Clients\Adapters\RestClient;
+use F0\LaravelMoodleClient\Clients\ClientAdapterInterface;
+use F0\LaravelMoodleClient\Services\User;
+use F0\LaravelMoodleClient\Tests\MoodleTestCase;
+use F0\LaravelMoodleClient\Entities\UserCollection;
+use F0\LaravelMoodleClient\Entities\Dto\User as UserDto;
+use F0\LaravelMoodleClient\Entities\User as UserEntity;
 
 /**
  * Class UserTest
- * @package Ozq\MoodleClient\Tests\Services
+ * @package F0\LaravelMoodleClient\Tests\Services
  */
 class UserTest extends MoodleTestCase
 {

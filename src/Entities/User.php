@@ -1,10 +1,10 @@
 <?php
 
-namespace Ozq\MoodleClient\Entities;
+namespace F0\LaravelMoodleClient\Entities;
 
 /**
  * Class User
- * @package Ozq\MoodleClient\Entities
+ * @package F0\LaravelMoodleClient\Entities
  */
 class User extends Entity
 {
@@ -116,7 +116,7 @@ class User extends Entity
      * @var string
      */
     public $middleName;
-  
+
     /**
      * @var string
      */

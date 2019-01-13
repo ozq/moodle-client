@@ -1,37 +1,39 @@
 {
-    "name": "ozq/moodle-client",
-    "description": "Moodle client",
+    "name": "f0/laravel-moodle-client",
+    "description": "Laravel Moodle Client",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "authors": [
-        {
-            "name": "Sergey Volkov",
-            "email": "svolkov25@gmail.com",
-            "homepage": "http://volkov.space"
-        },
         {
             "name": "Fabian Ospina",
             "email": "fabian.ospina@gmail.com",
-            "homepage": "http://fabianospina.com"
+            "homepage": "https://fabianospina.com"
         }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "guzzlehttp/guzzle": "5.x",
-        "beberlei/assert": "2.7.x"
+        "guzzlehttp/guzzle": "^6.3",
+        "beberlei/assert": "^3.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "5.x"
+        "phpunit/phpunit": "~6.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "F0\\LaravelMoodleClient\\LaravelMoodleClientServiceProvider"
+            ]
+        }
     },
     "autoload": {
         "psr-4": {
-            "Ozq\\MoodleClient\\": "src/"
+            "F0\\LaravelMoodleClient\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ozq\\MoodleClient\\Tests\\": "tests/"
+            "F0\\LaravelMoodleClient\\Tests\\": "tests/"
         }
     }
 }

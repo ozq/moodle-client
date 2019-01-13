@@ -1,15 +1,15 @@
 <?php
 
-namespace Ozq\MoodleClient\Clients\Adapters;
+namespace F0\LaravelMoodleClient\Clients\Adapters;
 
-use Ozq\MoodleClient\Clients\BaseAdapter;
-use Ozq\MoodleClient\Connection;
+use F0\LaravelMoodleClient\Clients\BaseAdapter;
+use F0\LaravelMoodleClient\Connection;
 use Assert\Assertion;
 use GuzzleHttp\Client as HttpClient;
 
 /**
  * Class RestClient
- * @package Ozq\MoodleClient\Clients
+ * @package F0\LaravelMoodleClient\Clients
  *
  * @method HttpClient getClient()
  */

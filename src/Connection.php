@@ -1,12 +1,12 @@
 <?php
 
-namespace Ozq\MoodleClient;
+namespace F0\LaravelMoodleClient;
 
 use Assert\Assertion;
 
 /**
  * Class Connection
- * @package Ozq\MoodleClient
+ * @package F0\LaravelMoodleClient
  */
 class Connection
 {

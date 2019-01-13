@@ -1,14 +1,14 @@
 <?php
 
-namespace Ozq\MoodleClient\Services;
+namespace F0\LaravelMoodleClient\Services;
 
-use Ozq\MoodleClient\Entities\User as UserItem;
-use Ozq\MoodleClient\Entities\Dto\User as UserDto;
-use Ozq\MoodleClient\Entities\UserCollection;
+use F0\LaravelMoodleClient\Entities\User as UserItem;
+use F0\LaravelMoodleClient\Entities\Dto\User as UserDto;
+use F0\LaravelMoodleClient\Entities\UserCollection;
 
 /**
  * Class User
- * @package Ozq\MoodleClient\Services
+ * @package F0\LaravelMoodleClient\Services
  */
 class User extends Service
 {
@@ -54,7 +54,7 @@ class User extends Service
 
     /**
      * Create new user
-     * @param \Ozq\MoodleClient\Entities\Dto\User[] ...$usersDto
+     * @param \F0\LaravelMoodleClient\Entities\Dto\User[] ...$usersDto
      * @return UserCollection
      */
     public function create(UserDto ...$usersDto)

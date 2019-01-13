@@ -1,10 +1,10 @@
 <?php
 
-namespace Ozq\MoodleClient\Entities;
+namespace F0\LaravelMoodleClient\Entities;
 
 /**
  * Class Course
- * @package Ozq\MoodleClient\Entities
+ * @package F0\LaravelMoodleClient\Entities
  */
 class Course extends Entity
 {

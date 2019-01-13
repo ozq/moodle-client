@@ -1,14 +1,14 @@
 <?php
 
-namespace Ozq\MoodleClient\Clients;
+namespace F0\LaravelMoodleClient\Clients;
 
-use Ozq\MoodleClient\Connection;
-use Ozq\MoodleClient\Exceptions\ApiException;
+use F0\LaravelMoodleClient\Connection;
+use F0\LaravelMoodleClient\Exceptions\ApiException;
 use ReflectionClass;
 
 /**
  * Class BaseAdapter
- * @package Ozq\MoodleClient\Clients
+ * @package F0\LaravelMoodleClient\Clients
  */
 abstract class BaseAdapter implements ClientAdapterInterface
 {

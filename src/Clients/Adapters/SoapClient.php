@@ -1,13 +1,13 @@
 <?php
 
-namespace Ozq\MoodleClient\Clients\Adapters;
+namespace F0\LaravelMoodleClient\Clients\Adapters;
 
-use Ozq\MoodleClient\Clients\BaseAdapter;
+use F0\LaravelMoodleClient\Clients\BaseAdapter;
 use \SoapClient as BaseSoapClient;
 
 /**
  * Class SoapClient
- * @package Ozq\MoodleClient\Clients\Adapters
+ * @package F0\LaravelMoodleClient\Clients\Adapters
  *
  * @method BaseSoapClient getClient()
  */
