@@ -31,6 +31,7 @@ return [
 ];
 ```
 
+
 2. Create service provider:  
 ```
 $ php artisan make:provider MoodleServiceProvider
