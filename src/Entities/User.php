@@ -116,7 +116,7 @@ class User extends Entity
      * @var string
      */
     public $middleName;
-
+  
     /**
      * @var string
      */
@@ -133,4 +133,5 @@ class User extends Entity
      * @var array
      */
     public $customFields = [];
+
 }

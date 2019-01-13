@@ -94,6 +94,7 @@ class User extends Service
     protected function getUserCollection(array $users)
     {
         $userItems = [];
+
         foreach ($users as $index => $userItem) {
             $userItems[] = new UserItem($userItem);
         }

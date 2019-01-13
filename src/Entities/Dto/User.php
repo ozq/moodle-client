@@ -130,4 +130,5 @@ class User extends Entity
      * @var array
      */
     public $customFields = [];
+
 }
