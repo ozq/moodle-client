@@ -5,9 +5,7 @@
     "version": "1.0.0",
     "authors": [
         {
-            "name": "Sergey Volkov",
-            "email": "svolkov25@gmail.com",
-            "homepage": "http://volkov.space"
+            "name": "Sergey Volkov"
         }
     ],
     "minimum-stability": "dev",
