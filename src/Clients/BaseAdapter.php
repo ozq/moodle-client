@@ -107,7 +107,7 @@ abstract class BaseAdapter implements ClientAdapterInterface
      */
     protected function handleException($response)
     {
-        //TODO: convert response to array!
+        $response = json_decode($response, true);
 
         if (array_key_exists('exception', $response)) {
             throw new ApiException($response['errorcode'] . ': ' . $response['message']);
