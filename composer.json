@@ -2,7 +2,7 @@
     "name": "psagnataf/moodle-client",
     "description": "Moodle client",
     "license": "MIT",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "authors": [
         {
             "name": "Sergey Volkov",
