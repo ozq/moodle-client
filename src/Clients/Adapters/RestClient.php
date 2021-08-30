@@ -48,13 +48,15 @@ class RestClient extends BaseAdapter
             self::OPTION_FORMAT   => $this->responseFormat,
             self::OPTION_TOKEN    => $this->getConnection()->getToken(),
         ];
+        $url = $this->getEndPoint();
 
-        $response = $this->getClient()->post(null, ['body' => array_merge($configuration, $arguments)]);
-        $this->handleException($response);
+        $response = $this->getClient()->post($url, ['form_params' => array_merge($configuration, $arguments)]);
+        $body = (string)$response->getBody();
+        $this->handleException($body);
 
         $formattedResponse = $this->responseFormat === self::RESPONSE_FORMAT_JSON ?
-            $response->json() :
-            $response->xml();
+            json_decode($body) :
+            $body;
 
         return $formattedResponse;
     }
@@ -65,7 +67,7 @@ class RestClient extends BaseAdapter
      */
     protected function buildClient()
     {
-        return new HttpClient(['base_url' => $this->getEndPoint()]);
+        return new HttpClient(['verify' => false]);
     }
 
     /**

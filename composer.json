@@ -1,8 +1,8 @@
 {
-    "name": "ozq/moodle-client",
+    "name": "psagnataf/moodle-client",
     "description": "Moodle client",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "authors": [
         {
             "name": "Sergey Volkov",
@@ -13,8 +13,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "guzzlehttp/guzzle": "5.x",
-        "beberlei/assert": "2.7.x"
+        "guzzlehttp/guzzle": "^6.5",
+        "beberlei/assert": "^3.3.1"
     },
     "require-dev": {
         "phpunit/phpunit": "5.x"
